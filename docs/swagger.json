@@ -9,7 +9,7 @@
       "url": "https://www.linkedin.com/in/paulo-goncalves/"
     }
   },
-  "host": "localhost:3000",
+  "host": "44.211.254.73:3000",
   "tags": [
     {
       "name": "Login",
