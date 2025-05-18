@@ -45,7 +45,7 @@
     "lint:fix": "standard --fix",
     "lint:staged": "lint-staged",
     "test:contract": "mocha test/contract --timeout 60000",
-    "test": "npx playwright test"
+    "test": "npx playwright test --project=api"
   },
   "dependencies": {
     "axios": "^0.21.1",

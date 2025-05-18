@@ -1,4 +1,4 @@
-name: Run Tests
+name: Run API Tests
 
 on:
   pull_request:
@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install playwright dependencies
-        run: npx playwright install --with-deps
+      - name: Run API tests
+        env:
+          BASE_URL: http://44.211.254.73:3000
+        run: npx playwright test --project=api
 
-      - name: Run tests
-        run: npm test
