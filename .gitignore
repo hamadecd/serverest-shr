@@ -1,7 +1,8 @@
 # stryker temp files
 .stryker-tmp
 stryker.log
-
+/test-results
+/playwright-report
 # Dependency directories
 .idea/
 .nyc_output/
@@ -22,3 +23,9 @@ tmp/
 *.swp
 *.tgz
 gcloud-flags.yaml
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

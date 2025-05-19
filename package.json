@@ -44,7 +44,8 @@
     "lint": "standard",
     "lint:fix": "standard --fix",
     "lint:staged": "lint-staged",
-    "test:contract": "mocha test/contract --timeout 60000"
+    "test:contract": "mocha test/contract --timeout 60000",
+    "test": "npx playwright test --project=api"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -77,6 +78,7 @@
     "@commitlint/config-conventional": "^12.1.1",
     "@hapi/joi": "^17.1.1",
     "@pact-foundation/pact": "^12.3.0",
+    "@playwright/test": "^1.52.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/exec": "^5.0.0",
@@ -85,11 +87,11 @@
     "@semantic-release/npm": "^7.1.1",
     "@semantic-release/release-notes-generator": "^9.0.2",
     "@stryker-mutator/core": "^5.3.0",
+    "@types/node": "^22.15.18",
     "chai": "^4.3.4",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "faker": "^5.5.3",
-    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "mocha": "^8.3.2",
     "nock": "^13.1.3",
